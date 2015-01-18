@@ -8,13 +8,13 @@
  */
 
 var React = require('react');
-var ReactPropTypes = React.PropTypes;
+//var ReactPropTypes = React.PropTypes;
 var TodoActions = require('../actions/TodoActions');
 
 var Footer = React.createClass({
 
   propTypes: {
-    allTodos: ReactPropTypes.object.isRequired
+    allTodos: React.PropTypes.object.isRequired
   },
 
   /**

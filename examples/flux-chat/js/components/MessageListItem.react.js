@@ -12,12 +12,12 @@
 
 var React = require('react');
 
-var ReactPropTypes = React.PropTypes;
+//var ReactPropTypes = React.PropTypes;
 
 var MessageListItem = React.createClass({
 
   propTypes: {
-    message: ReactPropTypes.object
+    message: React.PropTypes.object
   },
 
   render: function() {

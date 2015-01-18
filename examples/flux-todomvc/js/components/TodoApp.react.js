@@ -48,12 +48,19 @@ var TodoApp = React.createClass({
   render: function() {
   	return (
       <div>
-        <Header />
-        <MainSection
-          allTodos={this.state.allTodos}
-          areAllComplete={this.state.areAllComplete}
-        />
-        <Footer allTodos={this.state.allTodos} />
+        <section id="todoapp">
+          <Header />
+          <MainSection
+            allTodos={this.state.allTodos}
+            areAllComplete={this.state.areAllComplete}
+          />
+          <Footer allTodos={this.state.allTodos} />
+        </section>
+        <footer id="info">
+          <p>Double-click to edit a todo</p>
+          <p>Created by <a href="http://facebook.com/bill.fisher.771">Bill Fisher</a></p>
+          <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+        </footer>
       </div>
   	);
   },

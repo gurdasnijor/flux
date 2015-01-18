@@ -14,13 +14,13 @@ var ChatThreadActionCreators = require('../actions/ChatThreadActionCreators');
 var React = require('react');
 var cx = require('react/lib/cx');
 
-var ReactPropTypes = React.PropTypes;
+//var ReactPropTypes = React.PropTypes;
 
 var ThreadListItem = React.createClass({
 
   propTypes: {
-    thread: ReactPropTypes.object,
-    currentThreadID: ReactPropTypes.string
+    thread: React.PropTypes.object,
+    currentThreadID: React.PropTypes.string
   },
 
   render: function() {
