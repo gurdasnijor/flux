@@ -29,7 +29,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$|\.jsx$/, loader:'dataflow-diagnostics!jsx?harmony' },
+      { test: /\.js$|\.jsx$/, loader:'component-flow!jsx?harmony' },
       { test: /\.scss$/, loader: "style!css!sass"},
       { test: /\.css$/, loader: "style!css"},
       { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.eot$|\.woff$|\.ttf$/, loader: "file" }
